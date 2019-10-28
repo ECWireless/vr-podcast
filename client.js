@@ -17,7 +17,9 @@ function init(bundle, parent, options = {}) {
   );
 
   // Load the initial environment
-  r360.compositor.setBackground(r360.getAssetURL('360_world.jpg'));
+  r360.compositor.setBackground('static_assets/podcast-pic-3d.jpg', {
+    format: '3DTB'
+  });
 }
 
 window.React360 = {init};
